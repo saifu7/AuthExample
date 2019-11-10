@@ -1,0 +1,58 @@
+<% include ../partials/header %>
+<div style="background-image: url('https://cdn.discordapp.com/attachments/638037457530781706/642398373705678859/img1.jpg');
+height:100%; background-size:cover;">
+<div class="ui fluid container">
+    <div class="ui stackable grid">
+        <div class="row">
+
+        </div>
+        <div class="row">
+
+        </div>
+        <div class="five column row">
+            <div class="two wide column"></div>
+            <div class="two wide column"></div>
+            <div class="eight wide column">
+                <div class="ui teal segment">
+                    <div class="ui block header">
+                        Kiosks Login
+                    </div>
+                    <form class="ui form" action="/kiosks/login" method="POST">
+
+                        <div class="required sixteen wide field">
+                            <label>
+                                Email Id.
+                            </label>
+                            <div class="ui left icon input">
+                                <i class="icon id card "></i>
+                                <input type="text" name="username" placeholder="Enter Email." />
+                            </div>
+                        </div>
+
+                        <div class="required sixteen wide field">
+                            <label>
+                                Password.
+                            </label>
+                            <div class="ui left icon input">
+                                <i class="icon eye slash"></i>
+                                <input type="password" name="password" placeholder="Enter Password" />
+                            </div>
+                        </div>
+
+                        <div class="ui large fluid buttons">
+                            <button type="submit" class="ui positive button" >Login</button>
+                            <div class="or"></div>
+                            <button type="reset" class="ui negative button" >Reset</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="two wide column"></div>
+            <div class="two wide column"></div>
+        </div>
+
+    </div>
+</div>
+</div>
+<% include ../partials/footer %>
